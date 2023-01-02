@@ -3,7 +3,7 @@ import Config
 # Configure your database
 config :phoenix_trello, PhoenixTrello.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "post",
   hostname: "localhost",
   database: "phoenix_trello_dev",
   stacktrace: true,
@@ -16,6 +16,7 @@ config :phoenix_trello, PhoenixTrello.Repo,
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with esbuild to bundle .js and .css sources.
+
 config :phoenix_trello, PhoenixTrelloWeb.Endpoint,
   # Binding to loopback ipv4 address prevents access from other machines.
   # Change to `ip: {0, 0, 0, 0}` to allow access from other machines.
@@ -28,6 +29,7 @@ config :phoenix_trello, PhoenixTrelloWeb.Endpoint,
     # Start the esbuild watcher by calling Esbuild.install_and_run(:default, args)
     esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]}
   ]
+
 
 # ## SSL Support
 #
